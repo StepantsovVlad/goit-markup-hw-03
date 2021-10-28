@@ -1,10 +1,24 @@
-/* основной цвет текста #212121 */
-/* вторичный цвет текста #757575 */
+:root {
+  --primary-text-collor: #757575;
+  --title-text-collor: #212121;
+  --accent-collor: #2196f3;
+  --white-collor: #ffffff;
+}
+
+/* основной цвет текста #757575 */
+/* вторичный цвет текста #212121 */
+/* текст с прозрачностью rgba(255, 255, 255, 0.6)*/
 /* белый #FFFFFF */
 /* акцент #2196F3 */
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
 body {
-  background-color: #fff;
-  color: #757575;
+  background-color: var(--white-collor);
+  color: var(--primary-text-collor);
   font-family: roboto, sans-serif;
 }
 /* logo */
@@ -16,11 +30,11 @@ body {
   color: #2196f3;
 }
 .logo .black {
-  color: #000;
+  color: #000000;
 }
 /* site-nav */
 .site-nav a {
-  color: #212121;
+  color: var(--title-text-collor);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -31,7 +45,7 @@ body {
 }
 /* site-contacts */
 .site-contacts .link {
-  color: #212121;
+  color: var(--primary-text-collor);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -44,11 +58,11 @@ body {
 .footer-section {
   font-size: 14px;
   line-height: 1.71;
-  color: #ffffff;
+  color: var(--white-collor);
   background-color: #2f303a;
 }
 .logo .white {
-  color: #ffffff;
+  color: var(--white-collor);
 }
 .footer-section .link {
   color: rgba(255, 255, 255, 0.6);
@@ -66,14 +80,16 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  color: #ffffff;
+  color: var(--white-collor);
+  text-transform: uppercase;
 }
 .hero .buttons {
+  font-family: roboto, sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   border-radius: 4px;
-  color: #ffffff;
+  color: var(--white-collor);
   background: #2196f3;
 }
 /* section-advantage */
@@ -83,7 +99,7 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--title-text-collor);
 }
 .section-advantage .example {
   font-size: 14px;
@@ -96,7 +112,7 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-collor);
 }
 /*section-employee  */
 .section-employee h2 {
@@ -104,13 +120,13 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--title-text-collor);
 }
 .section-employee .name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  color: #212121;
+  color: var(--title-text-collor);
 }
 .section-employee .department {
   font-size: 16px;
@@ -118,26 +134,27 @@ body {
 }
 
 /* portfolio buttons  */
-.section-button .buttons {
+.section-portfolio .buttons {
+  font-family: roboto, sans-serif;
   background-color: rgba(245, 244, 250, 1);
   border-radius: 4px;
-  color: #212121;
+  color: var(--title-text-collor);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
 }
-.section-button .buttons:hover,
-.section-button .buttons:focus {
+.section-portfolio .buttons:hover,
+.section-portfolio .buttons:focus {
   background-color: #2196f3;
-  color: #ffffff;
+  color: var(--white-collor);
 }
 .section-portfolio h3 {
   font-size: 18px;
   line-height: 2;
-  color: #212121;
+  color: var(--title-text-collor);
 }
 .section-portfolio p {
   font-size: 16px;
   line-height: 1.87;
-  color: #757575;
+  color: var(--primary-text-collor);
 }
