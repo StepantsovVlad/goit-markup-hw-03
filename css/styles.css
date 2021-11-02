@@ -21,8 +21,13 @@ body {
   color: var(--primary-text-collor);
   font-family: roboto, sans-serif;
 }
+/* main-nav */
+.main-nav {
+  display: flex;
+}
 /* logo */
 .logo {
+  margin-left: 215px;
   font-family: raleway;
   font-weight: bold;
   font-size: 26px;
@@ -33,6 +38,12 @@ body {
   color: #000000;
 }
 /* site-nav */
+.site-nav {
+  display: flex;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav a {
   color: var(--title-text-collor);
   font-weight: 500;
@@ -44,6 +55,15 @@ body {
   color: #2196f3;
 }
 /* site-contacts */
+.site-contacts {
+  display: flex;
+  margin-left: auto;
+}
+.site-contacts .item:not(:last-child) {
+  margin-right: 50px;
+  margin-left: 93px;
+}
+
 .site-contacts .link {
   color: var(--primary-text-collor);
   font-weight: 500;
@@ -55,7 +75,11 @@ body {
   color: #2196f3;
 }
 /*footer-section */
+.footer-nav {
+  display: block;
+}
 .footer-section {
+  text-align: left;
   font-size: 14px;
   line-height: 1.71;
   color: var(--white-collor);
@@ -74,9 +98,11 @@ body {
 
 /* hero */
 .hero {
+  text-align: center;
   background-color: #2f303a;
 }
 .hero h1 {
+  margin: 0;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -84,6 +110,7 @@ body {
   text-transform: uppercase;
 }
 .hero .buttons {
+  margin-top: 40px;
   font-family: roboto, sans-serif;
   font-weight: bold;
   font-size: 16px;
@@ -93,6 +120,12 @@ body {
   background: #2196f3;
 }
 /* section-advantage */
+.section-advantage .list {
+  display: flex;
+  margin-left: 215px;
+  margin-right: 215px;
+}
+
 .section-advantage .meaning {
   font-weight: bold;
   font-size: 14px;
@@ -102,11 +135,19 @@ body {
   color: var(--title-text-collor);
 }
 .section-advantage .example {
+  margin-right: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 /* section-line */
+.section-line .list {
+  display: flex;
+  align-items: center;
+}
+.section-line .link {
+  margin-right: 30px;
+}
 .section-line h2 {
   font-size: 36px;
   line-height: 1.16;
@@ -134,8 +175,22 @@ body {
 }
 
 /* portfolio buttons  */
+.section-portfolio {
+  margin-top: 94px;
+}
+.section-portfolio .list {
+  justify-content: center;
+  display: flex;
+  margin-bottom: 50px;
+}
+.section-portfolio .link {
+  margin-left: 8px;
+}
 .section-portfolio .buttons {
+  display: inline-block;
+  padding: 6px 22px;
   font-family: roboto, sans-serif;
+  text-decoration: none;
   background-color: rgba(245, 244, 250, 1);
   border-radius: 4px;
   color: var(--title-text-collor);
@@ -148,13 +203,29 @@ body {
   background-color: #2196f3;
   color: var(--white-collor);
 }
+.section-portfolio .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section-portfolio .item {
+  width: 370px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
 .section-portfolio h3 {
+  margin-left: 24px;
   font-size: 18px;
   line-height: 2;
   color: var(--title-text-collor);
 }
 .section-portfolio p {
+  margin-left: 24px;
   font-size: 16px;
   line-height: 1.87;
   color: var(--primary-text-collor);
+}
+.conteiner {
+  width: 1200px;
+  align-items: center;
 }
